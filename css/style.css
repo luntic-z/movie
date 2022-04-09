@@ -1,0 +1,186 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  background-color: #17161b;
+  color: #FFFFFF;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+ul>li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  line-height: 1.4em;
+}
+
+:root {
+  --text-size-medium: 1.6rem;
+}
+
+.header,
+.aside,
+.main {
+  font-size: var(--text-size-medium);
+}
+
+h1 {
+  font-size: 6.4rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3.6rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+/*наши */
+
+h6 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.172em;
+}
+
+/* заголовки*/
+
+.header {
+  grid-area: my-header;
+  padding: 3rem 2.4rem 1.5rem;
+  background-color: #19181d;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.07);
+}
+
+.aside {
+  grid-area: my-aside;
+}
+
+.main {
+  grid-area: my-main;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "my-header my-header"
+    "my-aside my-main";
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 8rem 0;
+}
+
+.grid-init {
+  max-width: 144rem;
+  margin: auto;
+}
+
+.header__wrap {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: 7rem;
+  font-size: 6.4rem;
+  font-weight: 700;
+  line-height: 1.172em;
+}
+
+.header__nav {
+  margin-right: 9.2rem;
+}
+
+.header__nav a {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.header__nav a:not(:last-child) {
+  margin-right: 2.5rem;
+}
+
+.header__find {
+  margin-right: 3.9rem;
+}
+
+.header__find input {
+  padding: .9rem 4.5rem .9rem 1rem;
+  border-radius: .8rem;
+  background: #2b2a2f url(../img/find.svg);
+  background-repeat: no-repeat;
+  background-position: top 1.02rem right 1.5rem;
+
+  font-size: 2rem;
+  line-height: 1.15em;
+  color: #FFFFFF;
+}
+
+.header__find input::placeholder {
+  color: #FFF;
+}
+
+.header__date {
+  margin-right: 8.6rem;
+  text-align: center;
+
+  /*текст всего сайта */
+  font-size: 1.2rem;
+  line-height: 1.172em;
+  /* с такими параметрами*/
+}
+
+.header__personal {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 3px solid #FFFFFF;
+  overflow: hidden;
+}
+
+.header__personal img {
+  object-fit: cover;
+  object-position: center center;
+}
