@@ -19,7 +19,7 @@
       <div class="header__wrap">
         <a href="#" class="header__logo">MOVEA</a>
         <nav class="header__nav">
-          <a href="#">Movies</a>
+          <a class="active" href="#">Movies</a>
           <a href="#">TV shows</a>
           <a href="#">Animations</a>
           <a href="#">Plans</a>
@@ -36,9 +36,72 @@
         </div>
       </div>
     </header>
+
     <aside class="aside box-init">
-      aside
+      <section class="aside-display">
+
+        <div class="aside-trailers">
+          <div class="title">
+            <div class="title__left">
+              <h6 class="title__header">New trailers</h6>
+            </div>
+            <div class="title__right">
+              <span class="title__sort-title">Sort By</span>
+              <a class="title__sort" href="#" value="">Today
+                <img src="img/arrowsUpDn.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="playlist-wrap">
+            <div class="main-display__bg main-display__trailer aside-trailers__item">
+              <div class="main-display__views">Views 4.5k</div>
+              <div class="main-display__name">
+                <h1 class="main-display__header">Batman 2022</h1>
+                <div class="main-display__date">Dec 2022</div>
+              </div>
+              <button class="button-play" type="button">
+              </button>
+            </div>
+
+            <div class="main-display__bg main-display__trailer aside-trailers__item">
+              <div class="main-display__views">Views 4.5k</div>
+              <div class="main-display__name">
+                <h1 class="main-display__header">Batman 2022</h1>
+                <div class="main-display__date">Dec 2022</div>
+              </div>
+              <button class="button-play" type="button">
+              </button>
+            </div>
+          </div>
+          <div class="aside-close">
+            <button class="aside-close__button"><img src="img/aside-button.svg" alt=""></button>
+            <div class="aside-close__line"></div>
+          </div>
+        </div>
+
+        <div class="aside-display__footer">
+          <h6 class="aside-display__header">Favourite genres</h6>
+          <div class="aside-display__genres">
+            <span class="genres-plash plum">Action</span>
+            <span class="genres-plash orange">Western</span>
+            <span class="genres-plash plum">Adventures</span>
+            <span class="genres-plash orange">Drama</span>
+            <span class="genres-plash azure">Comedy</span>
+          </div>
+          <div class="aside-display__line"></div>
+          <div class="aside-display__add-genres">
+            <button type="button" class="add-genres__button">+</button>
+            <div class="aside-display__header add-genres__header">Add your favourite genres</div>
+          </div>
+          <div class="aside-display__genres">
+            <span class="genres-plash invisible">Drama</span>
+            <span class="genres-plash invisible">Comedy</span>
+            <span class="genres-plash invisible">Comedy</span>
+          </div>
+        </div>
+      </section>
     </aside>
+
     <main class="main">
       <section class="main-display">
         <div class="main-display__bg main-display__trailer">

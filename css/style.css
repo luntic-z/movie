@@ -56,6 +56,10 @@ h6 {
   --text-size-medium: 1.6rem;
   --text-size-large: 2rem;
   --line-height-default: 115%;
+
+  --plum: #8066F6;
+  --orange: #E1784F;
+  --azure: #63CFE1;
 }
 
 .header,
@@ -102,7 +106,6 @@ h3 {
 
 .aside {
   grid-area: my-aside;
-  padding-left: 2.4rem;
 }
 
 .main {
@@ -138,6 +141,10 @@ h3 {
 
 .header__nav {
   margin-right: 9.2rem;
+}
+
+.header__nav a.active {
+  border-bottom: 3px solid #FFFFFF;
 }
 
 .header__nav a {
@@ -252,7 +259,11 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 3.5rem 0;
+  margin-bottom: 3.5rem;
+}
+
+div:not(:first-child) .title {
+  margin-top: 3.5rem;
 }
 
 .title__left,
@@ -267,7 +278,7 @@ h3 {
   color: rgba(255, 255, 255, 0.2);
 }
 
-.title__all-movies {
+.title__right {
   font-size: 1.4rem;
   line-height: 114%;
   font-weight: 400;
@@ -383,4 +394,136 @@ h3 {
   width: 1rem;
   height: 1rem;
   margin-right: 0.4rem;
+}
+
+.title__sort-title {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.title__sort {
+  margin-left: 1.5rem;
+  color: #FFF;
+  display: flex;
+}
+
+.title__sort img {
+  margin-left: 0.4rem;
+  width: 0.6rem;
+  height: 1.4rem;
+}
+
+.aside-display {
+  padding-right: 3.6rem;
+}
+
+.aside-display .title {
+  margin: 0 0 2.6rem;
+}
+
+.aside-trailers {
+  position: relative;
+  padding: 0 2.3rem 4rem 2.4rem;
+}
+
+.aside-trailers .playlist-wrap {
+  flex-direction: column;
+}
+
+.aside-trailers__item {
+  width: 100%;
+  height: 22.6rem;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../img/batman_2022.jpeg) center 45%/cover no-repeat;
+  justify-content: end;
+}
+
+.aside-trailers__item:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.aside-display__footer {
+  padding: 2.5rem 0 4rem 2.4rem;
+  background-color: #1c1b1f;
+}
+
+.aside-display__header {
+  margin-bottom: 2rem;
+}
+
+.genres-plash {
+  padding: 0.6rem 1rem 0.5rem;
+  margin: 0 3rem 2rem 0;
+  font-size: var(--text-size-mini);
+  line-height: 116.7%;
+  background: #2B2A2F;
+  border-radius: 30px;
+}
+
+.plum {
+  background: var(--plum);
+}
+
+.orange {
+  background: var(--orange);
+}
+
+.azure {
+  background: var(--azure);
+}
+
+.aside-display__genres {
+  max-width: 30rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.aside-display__line {
+  margin: 3rem 0 3rem;
+  width: 6.5rem;
+  height: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.aside-display__add-genres {
+  display: flex;
+}
+
+.add-genres__button {
+  width: 1.8rem;
+  height: 1.8rem;
+  background-color: #2B2A2F;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+}
+
+.add-genres__header {
+  margin-left: 0.5rem;
+}
+
+.aside-close {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  right: 0;
+  bottom: 0;
+}
+
+.aside-close__line {
+  display: block;
+  width: 0;
+  height: 62.1rem;
+  border: 1px solid #1C1B1F;
+}
+
+.aside-close__button {
+  background: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 2.2rem;
+  height: 2.6rem;
+  top: 17%;
 }
