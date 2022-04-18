@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/stylesheet.css">
-  <script src="js/" defer></script>
+  <script src="js/modal.js" defer></script>
 </head>
 
 <body>
@@ -31,75 +31,75 @@
           <h6 class="header__hourse">19:55</h6>
           <span class="header__day">March 30</span>
         </div>
-        <div class="header__personal">
+        <a href="#" class="header__personal">
           <img src="img/avatar.jpeg" alt="">
-        </div>
+        </a>
       </div>
     </header>
 
     <aside class="aside box-init">
-      <section class="aside-display">
-
+      <div class="aside-top">
+        <div class="title">
+          <h6 class="title__header">New trailers</h6>
+          <div class="title__sort title__right">
+            <span class="title__sort-title">Sort By</span>
+            <div class="title__sort-select" href="#" value="">
+              <span>Today</span>
+              <div class="title__sort-img">
+                <img src="img/arrowUp.svg" alt="">
+                <img src="img/arrowDn.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="aside-trailers">
-          <div class="title">
-            <div class="title__left">
-              <h6 class="title__header">New trailers</h6>
+          <div class="main-display__bg main-display__trailer aside-item">
+            <div class="main-display__views">Views 4.5k</div>
+            <div class="main-display__name">
+              <h1 class="main-display__header">Batman 2022</h1>
+              <div class="main-display__date">Dec 2022</div>
             </div>
-            <div class="title__right">
-              <span class="title__sort-title">Sort By</span>
-              <a class="title__sort" href="#" value="">Today
-                <img src="img/arrowsUpDn.svg" alt="">
-              </a>
-            </div>
+            <button class="button-play" type="button">
+            </button>
           </div>
-          <div class="playlist-wrap">
-            <div class="main-display__bg main-display__trailer aside-trailers__item">
-              <div class="main-display__views">Views 4.5k</div>
-              <div class="main-display__name">
-                <h1 class="main-display__header">Batman 2022</h1>
-                <div class="main-display__date">Dec 2022</div>
-              </div>
-              <button class="button-play" type="button">
-              </button>
+          <div class="main-display__bg main-display__trailer aside-item">
+            <div class="main-display__views">Views 4.5k</div>
+            <div class="main-display__name">
+              <h1 class="main-display__header">Batman 2022</h1>
+              <div class="main-display__date">Dec 2022</div>
             </div>
-
-            <div class="main-display__bg main-display__trailer aside-trailers__item">
-              <div class="main-display__views">Views 4.5k</div>
-              <div class="main-display__name">
-                <h1 class="main-display__header">Batman 2022</h1>
-                <div class="main-display__date">Dec 2022</div>
-              </div>
-              <button class="button-play" type="button">
-              </button>
-            </div>
-          </div>
-          <div class="aside-close">
-            <button class="aside-close__button"><img src="img/aside-button.svg" alt=""></button>
-            <div class="aside-close__line"></div>
+            <button class="button-play" type="button">
+            </button>
           </div>
         </div>
-
-        <div class="aside-display__footer">
-          <h6 class="aside-display__header">Favourite genres</h6>
-          <div class="aside-display__genres">
-            <span class="genres-plash plum">Action</span>
-            <span class="genres-plash orange">Western</span>
-            <span class="genres-plash plum">Adventures</span>
-            <span class="genres-plash orange">Drama</span>
-            <span class="genres-plash azure">Comedy</span>
-          </div>
-          <div class="aside-display__line"></div>
-          <div class="aside-display__add-genres">
-            <button type="button" class="add-genres__button">+</button>
-            <div class="aside-display__header add-genres__header">Add your favourite genres</div>
-          </div>
-          <div class="aside-display__genres">
-            <span class="genres-plash invisible">Drama</span>
-            <span class="genres-plash invisible">Comedy</span>
-            <span class="genres-plash invisible">Comedy</span>
+        <div class="aside-close">
+          <button class="aside-close__button"><img src="img/aside-button.svg" alt=""></button>
+          <div class="aside-close__line"></div>
+        </div>
+      </div>
+      <div class="aside-bottom">
+        <div class="aside-favourite">
+          <h6 class="aside-header">Favourite genres</h6>
+          <div class="aside-genre__items">
+            <span class="genre-plash plum">Action</span>
+            <span class="genre-plash orange">Western</span>
+            <span class="genre-plash plum">Adventures</span>
+            <span class="genre-plash orange">Drama</span>
+            <span class="genre-plash azure">Comedy</span>
           </div>
         </div>
-      </section>
+        <div class="aside-footer">
+          <div class="aside-add">
+            <button type="button" class="aside-add__around">+</button>
+            <span>Add your favourite genres</span>
+          </div>
+          <div class="aside-genre__items">
+            <span class="genre-plash invisible">Drama</span>
+            <span class="genre-plash invisible">Comedy</span>
+            <span class="genre-plash invisible">Comedy</span>
+          </div>
+        </div>
+      </div>
     </aside>
 
     <main class="main">
@@ -220,6 +220,12 @@
         </div>
       </section>
     </main>
+  </div>
+
+  <div class="modal close">
+    <div class="modal__inner">
+      <div id="player"></div>
+    </div>
   </div>
 
 </body>
